@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Bright Future Institute</title>
+</head>
+
+<body style="margin:0; font-family:Arial; background-color:#f4f8fb;">
+
+    <header style="background-color:#123c69; color:white; text-align:center; padding:25px;">
+        <h1>Bright Future Institute</h1>
+        <p>Student Registration Form</p>
+    </header>
+
+    <nav style="background-color:#0b2545; text-align:center; padding:15px;">
+        <a href="index.html" style="color:white; margin:15px; text-decoration:none;">Home</a>
+        <a href="about.html" style="color:white; margin:15px; text-decoration:none;">About</a>
+        <a href="courses.html" style="color:white; margin:15px; text-decoration:none;">Courses</a>
+        <a href="students.html" style="color:white; margin:15px; text-decoration:none;">Students</a>
+        <a href="registration.html" style="color:white; margin:15px; text-decoration:none;">Registration</a>
+    </nav>
+
+    <main style="width:80%; max-width:700px; margin:30px auto;">
+
+        <form action="#" method="post"
+              style="background-color:white; padding:30px;">
+
+            <h2 style="text-align:center; color:#123c69;">
+                Student Registration Form
+            </h2>
+
+            <label for="name"><strong>Student Name:</strong></label><br>
+            <input type="text"
+                   id="name"
+                   name="student_name"
+                   placeholder="Enter your full name"
+                   minlength="3"
+                   maxlength="50"
+                   required
+                   style="width:95%; padding:10px; margin:8px 0 18px;">
+            <br>
+
+            <label for="email"><strong>Email:</strong></label><br>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="example@gmail.com"
+                   required
+                   style="width:95%; padding:10px; margin:8px 0 18px;">
+            <br>
+
+            <label for="password"><strong>Password:</strong></label><br>
+            <input type="password"
+                   id="password"
+                   name="password"
+                   placeholder="Enter password"
+                   minlength="6"
+                   maxlength="20"
+                   required
+                   style="width:95%; padding:10px; margin:8px 0 18px;">
+            <br>
+
+            <label for="contact"><strong>Contact Number:</strong></label><br>
+            <input type="tel"
+                   id="contact"
+                   name="contact"
+                   placeholder="03XXXXXXXXX"
+                   minlength="11"
+                   maxlength="11"
+                   required
+                   style="width:95%; padding:10px; margin:8px 0 18px;">
+            <br>
+
+            <strong>Gender:</strong><br>
+
+            <input type="radio"
+                   id="male"
+                   name="gender"
+                   value="Male"
+                   required>
+            <label for="male">Male</label>
+
+            <input type="radio"
+                   id="female"
+                   name="gender"
+                   value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio"
+                   id="other"
+                   name="gender"
+                   value="Other">
+            <label for="other">Other</label>
+
+            <br><br>
+
+            <label for="dob"><strong>Date of Birth:</strong></label><br>
+            <input type="date"
+                   id="dob"
+                   name="dob"
+                   required
+                   style="width:95%; padding:10px; margin:8px 0 18px;">
+            <br>
+
+            <label for="course"><strong>Select Course:</strong></label><br>
+
+            <select id="course"
+                    name="course"
+                    required
+                    style="width:98%; padding:10px; margin:8px 0 18px;">
+
+                <option value="">-- Select Course --</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="react">React</option>
+                <option value="python">Python</option>
+                <option value="graphic-designing">Graphic Designing</option>
+
+            </select>
+
+            <br>
+
+            <label for="address"><strong>Address:</strong></label><br>
+
+            <textarea id="address"
+                      name="address"
+                      placeholder="Enter your complete address"
+                      minlength="10"
+                      maxlength="200"
+                      required
+                      rows="5"
+                      style="width:95%; padding:10px; margin:8px 0 18px;"></textarea>
+
+            <br>
+
+            <strong>Additional Skills:</strong><br>
+
+            <input type="checkbox"
+                   id="html"
+                   name="skills"
+                   value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox"
+                   id="css"
+                   name="skills"
+                   value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox"
+                   id="computer"
+                   name="skills"
+                   value="Computer">
+            <label for="computer">Computer</label>
+
+            <br><br>
+
+            <input type="checkbox"
+                   id="terms"
+                   name="terms"
+                   required>
+            <label for="terms">
+                I agree to the terms and conditions.
+            </label>
+
+            <br><br>
+
+            <button type="submit"
+                    style="background-color:#123c69; color:white; padding:12px 30px; border:none; font-size:16px;">
+                Submit Registration
+            </button>
+
+            <button type="reset"
+                    style="background-color:#777; color:white; padding:12px 30px; border:none; font-size:16px; margin-left:10px;">
+                Reset
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer style="background-color:#123c69; color:white; text-align:center; padding:20px;">
+        <p>&copy; 2026 Bright Future Institute</p>
+    </footer>
+
+</body>
+</html>
